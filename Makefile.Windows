@@ -1,0 +1,8 @@
+# Makefile for Microsoft's nmake utility
+
+fix-line-endings.exe : fix-line-endings.c
+	$(CC) /nologo /O2 /Fe$@ $**
+
+clean:
+	del fix-line-endings.exe fix-line-endings.obj *~
+
